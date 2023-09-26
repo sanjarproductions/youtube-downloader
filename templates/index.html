@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Video Downloader</title>
+    <link rel="stylesheet" href="../static/style.css">
+    
+</head>
+<body>
+    <h1>YouTube Video Downloader</h1>
+    <form action="/download" method="post">
+        <input type="text" name="video_url" placeholder="Enter YouTube video URL">
+        <button type="submit">Download</button>
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+
+    <script src="../static/app.js"></script>
+</body>
+</html>
